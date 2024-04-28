@@ -6,7 +6,7 @@ Nehmen Sie das Assignment auf Github Classroom an und wählen Sie Ihren Namen au
 Dadurch wird ein (dieses) Repository für Sie erstellt. 
 Klonen Sie das Repo und pushen Sie Ihre Lösungen in mehreren sinnvoll zusammengefassten Commits (z.B. einer pro Teilaufgabe, es können aber auch gerne mehr sein).
 Die Erstellung eines Pull Requests ist bei diesem Setup nicht notwendig.
-Sie müssen Ihre Lösung bis zum 8. November um 23:59 Uhr gepusht haben, alle Tests müssen grün sein, und Sie müssen spätestens in der darauf folgenden von Ihnen belegten Übungsgruppe Ihre Lösung kurz demonstrieren.
+Sie müssen Ihre Lösung bis zum 12. Mai um 23:59 Uhr gepusht haben, alle Tests müssen grün sein, und Sie müssen spätestens in der darauf folgenden von Ihnen belegten Übungsgruppe Ihre Lösung kurz demonstrieren.
 
 ## Aufgabenstellung
 
