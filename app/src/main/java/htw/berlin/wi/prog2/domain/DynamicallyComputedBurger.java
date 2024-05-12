@@ -5,11 +5,16 @@ import java.util.List;
 
 public class DynamicallyComputedBurger implements Burger {
 
+    //Im Gegensatz zu PrecomputedBurger werden den Gesamtpreis, die Gesamtkalorien
+    // oder die Liste der Zutatennamen nicht während der Objekterstellung berechnet.
+
     List<Ingredient> ingredientList;
 
     public DynamicallyComputedBurger(List<Ingredient> ingredientList) {
         this.ingredientList = ingredientList;
-        };
+    };
+
+    //Werte werden dynamisch berechnet, wenn sie durch die entsprechenden Methoden angefordert werden:
 
     @Override
     public double calculatePrice() {

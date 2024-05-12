@@ -9,14 +9,16 @@ public class PrecomputedBurger implements Burger {
     private int calories;
     private List<String> ingredientNameList = new ArrayList<>();
 
+    //Liste von Ingredient-Objekten als Eingabe.
+    //Bei der Erstellung werden den Gesamtpreis, die Gesamtkalorien und die Liste der Namen berechnet.
+    //Alle erforderlichen Informationen über den Burger wurden berechnet und sind sofort verfügbar.
+
     public PrecomputedBurger(List<Ingredient> ingredientList) {
         for (Ingredient ingredient : ingredientList) {
-        this.price += ingredient.getPrice();
-        this.calories += ingredient.getCalories();
-        this.ingredientNameList.add(ingredient.getName());
+            this.price += ingredient.getPrice();
+            this.calories += ingredient.getCalories();
+            this.ingredientNameList.add(ingredient.getName());
         };
-
-
     }
 
     @Override
