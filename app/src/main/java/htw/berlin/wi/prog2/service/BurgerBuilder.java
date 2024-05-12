@@ -23,7 +23,7 @@ public class BurgerBuilder {
         }
 
         List<Ingredient> ingredientList2 = new ArrayList<>(ingredientList);
-        PrecomputedBurger precomputedBurger = new PrecomputedBurger(ingredientList2);
+        Burger precomputedBurger = new PrecomputedBurger(ingredientList2);
         ingredientList.clear();
         return precomputedBurger;
     }
@@ -36,7 +36,7 @@ public class BurgerBuilder {
         }
 
         List<Ingredient> ingredientList2 = new ArrayList<>(ingredientList);
-        DynamicallyComputedBurger dynamicallyComputedBurger = new DynamicallyComputedBurger(ingredientList2);
+        Burger dynamicallyComputedBurger = new DynamicallyComputedBurger(ingredientList2);
         ingredientList.clear();
         return dynamicallyComputedBurger;    }
 }

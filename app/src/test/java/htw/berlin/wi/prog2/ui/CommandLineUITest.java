@@ -2,6 +2,7 @@ package htw.berlin.wi.prog2.ui;
 
 import htw.berlin.wi.prog2.domain.DummyBurgerImpl;
 import htw.berlin.wi.prog2.domain.Ingredient;
+import htw.berlin.wi.prog2.service.InputParser;
 import htw.berlin.wi.prog2.service.SimpleInputParser;
 import htw.berlin.wi.prog2.service.BurgerBuilder;
 import org.junit.jupiter.api.DisplayName;
@@ -29,7 +30,7 @@ public class CommandLineUITest {
         when(builder.add(any())).thenReturn(builder);
         when(builder.buildPrecomputed()).thenReturn(new DummyBurgerImpl());
 
-        SimpleInputParser parser = mock(SimpleInputParser.class);
+        InputParser parser = mock(SimpleInputParser.class);
         when(parser.ingredientsFromInput(anyString())).thenReturn(List.of(
                 new Ingredient("Käse", 0.01, 2000)
         ));
@@ -52,7 +53,7 @@ public class CommandLineUITest {
         when(builder.add(any())).thenReturn(builder);
         when(builder.buildPrecomputed()).thenReturn(new DummyBurgerImpl());
 
-        SimpleInputParser parser = mock(SimpleInputParser.class);
+        InputParser parser = mock(SimpleInputParser.class);
         when(parser.ingredientsFromInput(anyString())).thenReturn(List.of(
                 new Ingredient("Käse", 0.01, 2000)
         ));
