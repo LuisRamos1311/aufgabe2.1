@@ -84,4 +84,21 @@ class BurgerBuilderTest {
     }
 
     // TODO hier mind. einen Test hinzufügen, der das korrekte Werfen der IllegalBurgerException testet (assertThrows)
+    @Test
+    @DisplayName("Throws an exception if there are less than 2 ingredients when building a DynaimcallyComputed Burger")
+    void testExceptionDynamicallyComputed() {
+        assertThrows(IllegalBurgerException.class, () ->  {
+            builder.add(broetchen).buildDynamicallyComputed();
+        } );
+    }
+
+    @Test
+    @DisplayName("Throws an exception if there are less than 2 ingredients when building a Precomputed Burger")
+    void testExceptionPrecomputed() {
+        assertThrows(IllegalBurgerException.class, () ->  {
+            builder.add(broetchen).buildPrecomputed();
+        } );
+    }
+
+
 }
